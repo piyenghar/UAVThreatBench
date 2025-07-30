@@ -1,0 +1,2588 @@
+[
+    {
+        "Scenario ID": "CS-OT-UAV-0774",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Bluetooth LE. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Unencrypted Communication Link via LTE/5G",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized Access to Diagnostic Logs",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0251",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Wi-Fi Access Point using a Private LTE/5G Network. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone Hijacking via Unsecured API",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized Access to Flight Path Data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0838",
+        "Scenario Name": "Inventory_Management_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Sensor readings (temperature, pressure)",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Private LTE/5G Network. This involves Sensor readings (temperature, pressure). A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the drone's diagnostic port, allowing an attacker to exploit vulnerabilities and gain control over the drone and potentially the entire AGV Fleet Control System",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to sensor readings, such as temperature and pressure data, which could compromise the privacy and integrity of the warehouse's inventory management operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0749",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Vulnerable_Firmware_Update_Mechanism",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Vulnerable Firmware Update Mechanism",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malicious Firmware Injection",
+            "Backdoor Installation",
+            "Operational Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Software/Firmware via Vulnerable Firmware Update Mechanism.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone or MES Server exploitation via vulnerable firmware update mechanism, allowing unauthorized access to the private network",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unencrypted diagnostic logs transfer between the drone and MES server, potentially exposing sensitive operational data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0575",
+        "Scenario Name": "Inventory_Management_Drone_via_Unauthorized_Wi-Fi_Access",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unauthorized Wi-Fi Access",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Exfiltration",
+            "Command Injection",
+            "Denial of Service"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Network Interface via Unauthorized Wi-Fi Access.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the Private LTE/5G Network via Wi-Fi, potentially allowing hackers to intercept or manipulate diagnostic logs and disrupt communication between the drone and the MES Server",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data breach or eavesdropping of sensitive diagnostic logs transmitted between the drone and the MES Server, compromising the confidentiality and integrity of the data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0524",
+        "Scenario Name": "Inventory_Management_Drone_via_RF_Jamming",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "RF Jamming",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Loss of Control",
+            "Communication Blackout",
+            "Mission Failure"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Communication Link via RF Jamming.",
+        "Expected Threats": [
+            {
+                "Threat": "RF Jamming attack on the Private LTE/5G Network, disrupting communication between the drone and ICS PLC",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to diagnostic logs transferred between the drone and ICS PLC, compromising sensitive data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0828",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_Ethernet_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Sensor readings (temperature, pressure)",
+        "Cybersecurity Origin/Attack Vector": "Insecure Ethernet Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Network Lateral Movement",
+            "Firmware Tampering",
+            "Unauthorized Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Private LTE/5G Network. This involves Sensor readings (temperature, pressure). A potential cybersecurity concern arises from the Network Interface via Insecure Ethernet Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the AGV Fleet Control System through the insecure Ethernet port, allowing an attacker to manipulate drone navigation and inventory data",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive sensor readings (temperature, pressure) transmitted between the drone and the control system, potentially compromising data privacy and integrity",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0625",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Default/Weak_Credentials",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Default/Weak Credentials",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Control",
+            "Data Access",
+            "System Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Software/Firmware via Default/Weak Credentials.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the drone or AGV system via default or weak credentials",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive diagnostic logs transmitted over Wi-Fi, potentially exposing operational data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0444",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unsecured_USB_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Unsecured USB Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malware Injection",
+            "Data Theft",
+            "Firmware Tampering"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Physical Access Point via Unsecured USB Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the drone's firmware update process via the unsecured USB port on the Physical Access Point, potentially allowing an attacker to install malicious firmware",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive data transmitted between the drone and the MES server, such as production schedules or inventory levels, due to vulnerabilities in the WPA2-Enterprise Wi-Fi protocol",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0427",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Vulnerable_Firmware_Update_Mechanism",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Vulnerable Firmware Update Mechanism",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malicious Firmware Injection",
+            "Backdoor Installation",
+            "Operational Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Software/Firmware via Vulnerable Firmware Update Mechanism.",
+        "Expected Threats": [
+            {
+                "Threat": "Vulnerable Firmware Update Mechanism allowing unauthorized access and control of the drone and MES server",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Potential data breach and unauthorized access to sensitive manufacturing data due to insecure firmware updates",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0437",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Bluetooth_Eavesdropping",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Bluetooth Eavesdropping",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Device Impersonation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Network Interface via Bluetooth Eavesdropping.",
+        "Expected Threats": [
+            {
+                "Threat": "Bluetooth Eavesdropping on drone-MES communication",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated firmware updates on the drone via Wi-Fi",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0415",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Default/Weak_Credentials",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Default/Weak Credentials",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Control",
+            "Data Access",
+            "System Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Wired Ethernet (via docking station). This involves Automated firmware updates. A potential cybersecurity concern arises from the Software/Firmware via Default/Weak Credentials.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone or MES server due to default or weak credentials, allowing attackers to exploit and gain control over the system",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Theft or manipulation of sensitive data, such as manufacturing schedules, inventory levels, or delivery routes, by exploiting vulnerabilities in the firmware update process",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0859",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Automated Storage and Retrieval System (AS/RS)",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Assembly instructions download",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Automated Storage and Retrieval System (AS/RS) using a Private LTE/5G Network. This involves Assembly instructions download. A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of the Automated Parts Delivery Drone's navigation system, potentially disrupting delivery operations and causing accidents or losses",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated or tampered assembly instructions download, compromising the integrity of the products being assembled and potentially leading to intellectual property theft or sabotage",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0622",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_RF_Jamming",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "RF Jamming",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Loss of Control",
+            "Communication Blackout",
+            "Mission Failure"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Communication Link via RF Jamming.",
+        "Expected Threats": [
+            {
+                "Threat": "RF Jamming attack on the WPA2-Enterprise Wi-Fi communication link between the Automated Parts Delivery Drone and the AGV Fleet Control System",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated access to Diagnostic logs transferred over the Wi-Fi network, potentially exposing sensitive operational data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0737",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Default/Weak_Credentials",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Default/Weak Credentials",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Control",
+            "Data Access",
+            "System Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Software/Firmware via Default/Weak Credentials.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone or MES Server compromise via default or weak credentials in software/firmware",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to diagnostic logs and potential data breach due to insecure Wi-Fi or weak credentials",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0545",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a Wired Ethernet (via docking station). This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated or unauthorized access to the Industrial Control System (ICS) PLC through the wired Ethernet connection, potentially allowing an attacker to manipulate the diagnostic logs or disrupt the inventory management process",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data breach or exposure of sensitive inventory information due to the insecure API used for backend system interaction with the Warehouse Management System (WMS) or Manufacturing Execution System (MES)",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0519",
+        "Scenario Name": "Inventory_Management_Drone_via_Unauthorized_Wi-Fi_Access",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unauthorized Wi-Fi Access",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Exfiltration",
+            "Command Injection",
+            "Denial of Service"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Network Interface via Unauthorized Wi-Fi Access.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the Private LTE/5G Network via Wi-Fi, potentially allowing hackers to intercept or manipulate diagnostic logs and disrupt ICS operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception or unauthorized access to sensitive diagnostic logs transmitted between the drone and ICS PLC, compromising data privacy and potentially revealing confidential information",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0769",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Wired Ethernet (via docking station). This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated or unauthorized access to the MES server through the insecure API, potentially allowing malicious actors to manipulate or disrupt the manufacturing execution system",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception or unauthorized access to diagnostic logs transferred between the drone and the MES server, potentially exposing sensitive information about the manufacturing process or the drone's operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0316",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_Application_Software",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Insecure Application Software",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Manipulation",
+            "Privilege Escalation",
+            "Remote Code Execution"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Software/Firmware via Insecure Application Software.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone or ICS PLC exploitation via insecure firmware updates",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to inventory data through insecure application software",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0433",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone firmware update compromise via insecure API",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated data exposure of manufacturing execution system data through insecure backend system interaction",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0342",
+        "Scenario Name": "Inventory_Management_Drone_via_RF_Jamming",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "RF Jamming",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Loss of Control",
+            "Communication Blackout",
+            "Mission Failure"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Communication Link via RF Jamming.",
+        "Expected Threats": [
+            {
+                "Threat": "RF Jamming attack on the Private LTE/5G Network, disrupting communication between the Inventory Management Drone and the MES Server",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated or malicious firmware updates being transmitted to the drone, potentially leading to data breaches or unauthorized access to the MES Server",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0564",
+        "Scenario Name": "Inventory_Management_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Unencrypted Communication Link via LTE/5G",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unprotected Diagnostic Logs Transfer",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0818",
+        "Scenario Name": "Inventory_Management_Drone_via_RF_Jamming",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Sensor readings (temperature, pressure)",
+        "Cybersecurity Origin/Attack Vector": "RF Jamming",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Loss of Control",
+            "Communication Blackout",
+            "Mission Failure"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Sensor readings (temperature, pressure). A potential cybersecurity concern arises from the Communication Link via RF Jamming.",
+        "Expected Threats": [
+            {
+                "Threat": "RF Jamming Attack on Communication Link",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized Access to Sensor Readings",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0069",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the drone's flight path updates and control signals via exploitation of WPA2-Enterprise Wi-Fi vulnerabilities",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data breaches or unauthorized modification of inventory data through the insecure API to WMS/MES, potentially compromising data privacy and integrity",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0117",
+        "Scenario Name": "Inventory_Management_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Wi-Fi Access Point using a WPA2-Enterprise Wi-Fi. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of drone navigation signals",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated access to flight path updates and control signals via Industrial Wi-Fi Access Point",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0070",
+        "Scenario Name": "Inventory_Management_Drone_via_Cloud_Platform_Vulnerability",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Cloud Platform Vulnerability",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Fleet-wide Control Compromise",
+            "Mass Data Breach",
+            "Supply Chain Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Backend System Interaction via Cloud Platform Vulnerability.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's Wi-Fi network, allowing hackers to intercept and manipulate flight path updates and control signals",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data breach of sensitive inventory information through the cloud platform vulnerability, compromising the confidentiality and integrity of the data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0320",
+        "Scenario Name": "Inventory_Management_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the Industrial Control System (ICS) PLC through the exposed diagnostic port, allowing an attacker to manipulate the system and disrupt warehouse operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive inventory data transmitted between the drone and the ICS PLC due to vulnerabilities in the WPA2-Enterprise Wi-Fi network, potentially leading to data breaches and unauthorized access",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0759",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Bluetooth_Eavesdropping",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Bluetooth Eavesdropping",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Device Impersonation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Wired Ethernet (via docking station). This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Network Interface via Bluetooth Eavesdropping.",
+        "Expected Threats": [
+            {
+                "Threat": "Bluetooth Eavesdropping on diagnostic logs transfer",
+                "RED Article": "(e)"
+            },
+            {
+                "Threat": "Unauthorized network access via Wired Ethernet interface",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0229",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Wi-Fi Access Point using a WPA2-Enterprise Wi-Fi. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of drone navigation signals, potentially disrupting flight paths and control signals",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to flight path updates and control signals, compromising data privacy and integrity",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0313",
+        "Scenario Name": "Inventory_Management_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of the drone's navigation system, potentially disrupting inventory management and ICS operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated or malicious firmware updates to the drone or ICS PLC, compromising the security and integrity of the system",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0463",
+        "Scenario Name": "Inventory_Management_Drone_via_Unauthorized_Wi-Fi_Access",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unauthorized Wi-Fi Access",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Exfiltration",
+            "Command Injection",
+            "Denial of Service"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Network Interface via Unauthorized Wi-Fi Access.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the Private LTE/5G Network via Wi-Fi, potentially allowing hackers to intercept or manipulate diagnostic logs and disrupt communication between the drone and AGV Fleet Control System",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data breach of sensitive inventory information and diagnostic logs transferred between the drone and AGV Fleet Control System, compromising data privacy and potentially leading to fraud or sabotage",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0061",
+        "Scenario Name": "Inventory_Management_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of drone navigation signals",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated access to flight path updates and control signals via WPA2-Enterprise Wi-Fi",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0573",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated API access allowing unauthorized modification of inventory data or disruption of warehouse operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive diagnostic logs or inventory data due to insecure API or WPA2-Enterprise Wi-Fi vulnerabilities, potentially leading to data breaches or privacy violations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0026",
+        "Scenario Name": "Inventory_Management_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Real-time inventory data upload",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Real-time inventory data upload. A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the MES Server via the exposed diagnostic port on the Physical Access Point, allowing an attacker to intercept or modify real-time inventory data",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized disclosure of sensitive inventory data due to inadequate encryption or authentication mechanisms on the Private LTE/5G Network, potentially leading to intellectual property theft or corporate espionage",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0920",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unsecured_USB_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Assembly instructions download",
+        "Cybersecurity Origin/Attack Vector": "Unsecured USB Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malware Injection",
+            "Data Theft",
+            "Firmware Tampering"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Wired Ethernet (via docking station). This involves Assembly instructions download. A potential cybersecurity concern arises from the Physical Access Point via Unsecured USB Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized device connection via unsecured USB port, potentially allowing malware installation or data exfiltration",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Theft or manipulation of assembly instructions and sensitive production data stored on the MES server or transmitted to the drone",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0914",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Assembly instructions download",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Wired Ethernet (via docking station). This involves Assembly instructions download. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Unencrypted Communication Link",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data Breach of Assembly Instructions",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0105",
+        "Scenario Name": "Inventory_Management_Drone_via_Vulnerable_Firmware_Update_Mechanism",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Vulnerable Firmware Update Mechanism",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malicious Firmware Injection",
+            "Backdoor Installation",
+            "Operational Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Bluetooth LE. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Software/Firmware via Vulnerable Firmware Update Mechanism.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's flight path updates and control signals through exploitation of the vulnerable Bluetooth LE connection",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Malicious firmware updates compromising the drone's software, potentially leading to data breaches or disruptions in inventory management operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0844",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Automated Storage and Retrieval System (AS/RS)",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Assembly instructions download",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Automated Storage and Retrieval System (AS/RS) using a WPA2-Enterprise Wi-Fi. This involves Assembly instructions download. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone Communication Link Interception via Unencrypted LTE/5G",
+                "RED Article": "(e)"
+            },
+            {
+                "Threat": "Wi-Fi Network Exploitation using WPA2-Enterprise Vulnerabilities",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0027",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Real-time inventory data upload",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Real-time inventory data upload. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone-to-MES Server Communication Intercept and Inventory Data Theft",
+                "RED Article": "(e)"
+            },
+            {
+                "Threat": "Insecure API Exploitation for Unauthorized Access to WMS/MES and Disruption of Inventory Management Operations",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0088",
+        "Scenario Name": "Inventory_Management_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Proprietary RF Link",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Proprietary RF Link. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Unencrypted Communication Link Eavesdropping",
+                "RED Article": "(e)"
+            },
+            {
+                "Threat": "Drone and AGV System Network Disruption via LTE/5G Link Exploitation",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0086",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_Ethernet_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Proprietary RF Link",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Insecure Ethernet Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Network Lateral Movement",
+            "Firmware Tampering",
+            "Unauthorized Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Proprietary RF Link. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Network Interface via Insecure Ethernet Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone Hijacking via Exploitation of Insecure Ethernet Port",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized Access to Inventory Data through Compromised Proprietary RF Link",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0362",
+        "Scenario Name": "Inventory_Management_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's firmware update process through the exposed diagnostic port, allowing an attacker to inject malicious code and compromise the drone and potentially the MES server",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive inventory data transmitted between the drone and the MES server due to vulnerabilities in the WPA2-Enterprise Wi-Fi network, potentially leading to data breaches and privacy violations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0283",
+        "Scenario Name": "Inventory_Management_Drone_via_Bluetooth_Eavesdropping",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Bluetooth Eavesdropping",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Device Impersonation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a Wired Ethernet (via docking station). This involves Automated firmware updates. A potential cybersecurity concern arises from the Network Interface via Bluetooth Eavesdropping.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's firmware updates through the wired Ethernet connection, potentially allowing malicious actors to compromise the drone or the ICS PLC",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Bluetooth eavesdropping on the communication between the drone and the ICS PLC, potentially exposing sensitive inventory management data or disrupting the operation",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0559",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a Bluetooth LE. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated or unauthorized access to the ICS PLC via Bluetooth LE, potentially allowing malicious actors to manipulate or disrupt industrial control processes",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Exposure of sensitive diagnostic logs or inventory data due to insecure API interactions between the drone's backend system and the Warehouse Management System (WMS) or Manufacturing Execution System (MES)",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0137",
+        "Scenario Name": "Inventory_Management_Drone_via_Tamperable_Onboard_Storage",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Tamperable Onboard Storage",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Manipulation",
+            "Log Erasure",
+            "Data Exfiltration"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Wi-Fi Access Point using a Private LTE/5G Network. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Physical Access Point via Tamperable Onboard Storage.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's onboard storage, allowing malicious actors to manipulate flight paths and control signals",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive inventory data transmitted between the drone and the Industrial Wi-Fi Access Point, compromising data privacy",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0476",
+        "Scenario Name": "Inventory_Management_Drone_via_Cloud_Platform_Vulnerability",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Cloud Platform Vulnerability",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Fleet-wide Control Compromise",
+            "Mass Data Breach",
+            "Supply Chain Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Backend System Interaction via Cloud Platform Vulnerability.",
+        "Expected Threats": [
+            {
+                "Threat": "Unsecured Diagnostic Logs Transfer",
+                "RED Article": "(e)"
+            },
+            {
+                "Threat": "Cloud Platform Vulnerability in Backend System Interaction",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0644",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Cloud_Platform_Vulnerability",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Cloud Platform Vulnerability",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Fleet-wide Control Compromise",
+            "Mass Data Breach",
+            "Supply Chain Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Backend System Interaction via Cloud Platform Vulnerability.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone and AGV system compromise through exploitation of Private LTE/5G Network vulnerabilities",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to diagnostic logs and potential data breaches due to Cloud Platform Vulnerability",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0561",
+        "Scenario Name": "Inventory_Management_Drone_via_Unauthorized_Wi-Fi_Access",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unauthorized Wi-Fi Access",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Exfiltration",
+            "Command Injection",
+            "Denial of Service"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Network Interface via Unauthorized Wi-Fi Access.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized Wi-Fi Access to the drone or MES server",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive Diagnostic logs during transfer",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0439",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of the drone's navigation system, potentially disrupting its ability to accurately locate itself and interact with the MES Server",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated or malicious firmware updates transmitted to the drone via the WPA2-Enterprise Wi-Fi connection, compromising the drone's security and potentially leading to data breaches or unauthorized access",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0593",
+        "Scenario Name": "Inventory_Management_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Wired Ethernet (via docking station). This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of drone navigation system",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated access to diagnostic logs transferred between drone and MES server",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0394",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Insecure_Ethernet_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Insecure Ethernet Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Network Lateral Movement",
+            "Firmware Tampering",
+            "Unauthorized Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Control System (ICS) PLC using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Network Interface via Insecure Ethernet Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone or ICS PLC exploitation via insecure Ethernet port",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated firmware updates leading to data breaches or manipulation",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0379",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unauthorized_Wi-Fi_Access",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Unauthorized Wi-Fi Access",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Exfiltration",
+            "Command Injection",
+            "Denial of Service"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Control System (ICS) PLC using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Network Interface via Unauthorized Wi-Fi Access.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the Private LTE/5G Network via Wi-Fi, potentially allowing hackers to intercept or manipulate drone communications and ICS PLC interactions",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated or malicious firmware updates being installed on the drone or ICS PLC, compromising the integrity and security of the system",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0112",
+        "Scenario Name": "Inventory_Management_Drone_via_Cloud_Platform_Vulnerability",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Cloud Platform Vulnerability",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Fleet-wide Control Compromise",
+            "Mass Data Breach",
+            "Supply Chain Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Bluetooth LE. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Backend System Interaction via Cloud Platform Vulnerability.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's flight path updates and control signals via Bluetooth LE vulnerability",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data breach of sensitive inventory information through the cloud platform vulnerability, compromising data privacy",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0219",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Default/Weak_Credentials",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Default/Weak Credentials",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Control",
+            "Data Access",
+            "System Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a Bluetooth LE. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Software/Firmware via Default/Weak Credentials.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the drone or AGV Fleet Control System due to default or weak credentials, allowing attackers to manipulate flight paths or control signals",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to sensitive data, such as warehouse layouts or delivery schedules, transmitted over Bluetooth LE, compromising data privacy and potentially leading to intellectual property theft or corporate espionage",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0672",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Cloud_Platform_Vulnerability",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Cloud Platform Vulnerability",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Fleet-wide Control Compromise",
+            "Mass Data Breach",
+            "Supply Chain Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a Bluetooth LE. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Backend System Interaction via Cloud Platform Vulnerability.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated or unauthorized access to the drone's diagnostic logs via Bluetooth LE, potentially allowing an attacker to intercept sensitive information",
+                "RED Article": "(e)"
+            },
+            {
+                "Threat": "Exploitation of the Cloud Platform Vulnerability, enabling an attacker to gain unauthorized access to the Backend System and disrupt the interaction between the drone and the AGV Fleet Control System",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0020",
+        "Scenario Name": "Inventory_Management_Drone_via_RF_Jamming",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Real-time inventory data upload",
+        "Cybersecurity Origin/Attack Vector": "RF Jamming",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Loss of Control",
+            "Communication Blackout",
+            "Mission Failure"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Real-time inventory data upload. A potential cybersecurity concern arises from the Communication Link via RF Jamming.",
+        "Expected Threats": [
+            {
+                "Threat": "RF Jamming Attack on the Private LTE/5G Network",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized Access to Real-time Inventory Data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0350",
+        "Scenario Name": "Inventory_Management_Drone_via_Cloud_Platform_Vulnerability",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Cloud Platform Vulnerability",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Fleet-wide Control Compromise",
+            "Mass Data Breach",
+            "Supply Chain Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Backend System Interaction via Cloud Platform Vulnerability.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated firmware updates allowing malicious code execution on the drone, potentially disrupting inventory management and MES server operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Cloud platform vulnerability enabling unauthorized access to sensitive inventory data and MES server information, compromising data privacy and potentially leading to intellectual property theft",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0772",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Insecure_Ethernet_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Insecure Ethernet Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Network Lateral Movement",
+            "Firmware Tampering",
+            "Unauthorized Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Bluetooth LE. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Network Interface via Insecure Ethernet Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's diagnostic logs through the insecure Bluetooth LE connection, potentially allowing an attacker to intercept sensitive data",
+                "RED Article": "(e)"
+            },
+            {
+                "Threat": "Exploitation of the insecure Ethernet port on the MES server, allowing an attacker to gain unauthorized network access and potentially disrupt or manipulate the manufacturing execution system",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0637",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Vulnerable_Firmware_Update_Mechanism",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Vulnerable Firmware Update Mechanism",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malicious Firmware Injection",
+            "Backdoor Installation",
+            "Operational Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Software/Firmware via Vulnerable Firmware Update Mechanism.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone or AGV Fleet Control System compromise via exploitation of Vulnerable Firmware Update Mechanism",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to Diagnostic logs, potentially exposing sensitive information about warehouse operations or drone/AGV systems",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0620",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Unencrypted Communication Link via LTE/5G",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unprotected Diagnostic Logs Transfer",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0617",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unauthorized_Wi-Fi_Access",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unauthorized Wi-Fi Access",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Exfiltration",
+            "Command Injection",
+            "Denial of Service"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Network Interface via Unauthorized Wi-Fi Access.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the Wi-Fi network, potentially allowing hackers to intercept or manipulate diagnostic logs and disrupt drone and AGV operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive diagnostic logs, compromising data privacy and potentially revealing confidential information about the warehouse operations or drone technology",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0339",
+        "Scenario Name": "Inventory_Management_Drone_via_Bluetooth_Eavesdropping",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Bluetooth Eavesdropping",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Device Impersonation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Network Interface via Bluetooth Eavesdropping.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated firmware updates via the Private LTE/5G Network",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Bluetooth eavesdropping on drone-MES communication",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0382",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Control System (ICS) PLC using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Unencrypted Communication Link",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data Interception and Privacy Breach",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0803",
+        "Scenario Name": "Inventory_Management_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Sensor readings (temperature, pressure)",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Sensor readings (temperature, pressure). A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of the drone's location data",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to sensor readings (temperature, pressure) compromising data privacy",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0057",
+        "Scenario Name": "Inventory_Management_Drone_via_Unauthorized_Wi-Fi_Access",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Unauthorized Wi-Fi Access",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Exfiltration",
+            "Command Injection",
+            "Denial of Service"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Network Interface via Unauthorized Wi-Fi Access.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the Wi-Fi network, potentially allowing hackers to intercept or manipulate flight path updates and control signals",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data eavesdropping or tampering with sensitive inventory management information transmitted between the drone and the AGV Fleet Control System",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0076",
+        "Scenario Name": "Inventory_Management_Drone_via_RF_Jamming",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "RF Jamming",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Loss of Control",
+            "Communication Blackout",
+            "Mission Failure"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Private LTE/5G Network. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Communication Link via RF Jamming.",
+        "Expected Threats": [
+            {
+                "Threat": "RF Jamming Attack on Communication Link",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized Access to Flight Path Updates and Control Signals",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0779",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Default/Weak_Credentials",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Default/Weak Credentials",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Control",
+            "Data Access",
+            "System Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Bluetooth LE. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Software/Firmware via Default/Weak Credentials.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the drone or MES server due to default or weak credentials, allowing an attacker to intercept or manipulate diagnostic logs",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized disclosure of sensitive diagnostic log data, potentially containing proprietary information about the manufacturing process or equipment, due to insecure transmission over Bluetooth LE",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0306",
+        "Scenario Name": "Inventory_Management_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's firmware update process through the exposed diagnostic port, potentially allowing an attacker to manipulate the drone's behavior and disrupt the inventory management process",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive inventory data transmitted between the drone and the ICS PLC over the private LTE/5G network, compromising the confidentiality and integrity of the data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0054",
+        "Scenario Name": "Inventory_Management_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Real-time inventory data upload",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Wi-Fi Access Point using a Private LTE/5G Network. This involves Real-time inventory data upload. A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the Industrial Wi-Fi Access Point via the exposed diagnostic port, allowing an attacker to intercept and manipulate real-time inventory data",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to sensitive inventory data due to inadequate encryption or authentication mechanisms, potentially leading to data breaches or privacy violations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0369",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Control System (ICS) PLC using a Wired Ethernet (via docking station). This involves Automated firmware updates. A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of the drone's navigation system, potentially disrupting its ability to accurately locate the docking station and interact with the ICS PLC",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to the drone's firmware update process, allowing an attacker to install malicious firmware and compromise the security of the ICS PLC and the overall industrial control system",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0778",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Insecure_Application_Software",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Insecure Application Software",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Manipulation",
+            "Privilege Escalation",
+            "Remote Code Execution"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Bluetooth LE. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Software/Firmware via Insecure Application Software.",
+        "Expected Threats": [
+            {
+                "Threat": "Insecure Bluetooth LE connection allowing unauthorized access to the MES Server and drone",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data breach of diagnostic logs due to insecure application software in the drone or MES Server",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0552",
+        "Scenario Name": "Inventory_Management_Drone_via_RF_Jamming",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "RF Jamming",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Loss of Control",
+            "Communication Blackout",
+            "Mission Failure"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a Bluetooth LE. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Communication Link via RF Jamming.",
+        "Expected Threats": [
+            {
+                "Threat": "RF Jamming attack on the Bluetooth LE communication link between the drone and the ICS PLC, potentially disrupting or intercepting diagnostic logs transfer",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to sensitive diagnostic logs and inventory data transmitted over the Bluetooth LE connection, compromising data privacy and confidentiality",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0321",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone exploitation via insecure API to WMS/MES, allowing unauthorized access and control of the drone and potentially the ICS PLC",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive inventory data transmitted by the drone to the backend system, compromising data privacy and potentially leading to fraud",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0858",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Automated Storage and Retrieval System (AS/RS)",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Assembly instructions download",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Automated Storage and Retrieval System (AS/RS) using a Private LTE/5G Network. This involves Assembly instructions download. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Unencrypted Communication Link",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data Breach of Assembly Instructions",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0114",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_Ethernet_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Insecure Ethernet Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Network Lateral Movement",
+            "Firmware Tampering",
+            "Unauthorized Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Wi-Fi Access Point using a WPA2-Enterprise Wi-Fi. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Network Interface via Insecure Ethernet Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone hacking via insecure Ethernet port, allowing unauthorized access to the drone's system and potentially disrupting inventory management operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Eavesdropping on flight path updates and control signals transmitted over the Industrial Wi-Fi Access Point, compromising the confidentiality and integrity of sensitive inventory data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0352",
+        "Scenario Name": "Inventory_Management_Drone_via_Insecure_Ethernet_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Insecure Ethernet Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Network Lateral Movement",
+            "Firmware Tampering",
+            "Unauthorized Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Network Interface via Insecure Ethernet Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone exploitation via insecure Ethernet port",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated firmware updates leading to data breaches",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0161",
+        "Scenario Name": "Inventory_Management_Drone_via_Vulnerable_Firmware_Update_Mechanism",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Vulnerable Firmware Update Mechanism",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malicious Firmware Injection",
+            "Backdoor Installation",
+            "Operational Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Wi-Fi Access Point using a Bluetooth LE. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Software/Firmware via Vulnerable Firmware Update Mechanism.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone hacking and manipulation through vulnerable Bluetooth LE connection",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated firmware updates allowing malicious code injection and potential data breaches",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0750",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Insecure_Application_Software",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Insecure Application Software",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Manipulation",
+            "Privilege Escalation",
+            "Remote Code Execution"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Software/Firmware via Insecure Application Software.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone and MES Server exploitation through insecure application software, allowing unauthorized access to the private LTE/5G network and potential disruption of parts delivery operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unprotected diagnostic logs transferred between the drone and MES server, potentially exposing sensitive information about the manufacturing process and warehouse operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0236",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Wi-Fi Access Point using a WPA2-Enterprise Wi-Fi. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the Industrial Wi-Fi Access Point via the Exposed Diagnostic Port, allowing an attacker to intercept or manipulate flight path updates and control signals",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of sensitive data, such as drone location and parts delivery information, transmitted over the WPA2-Enterprise Wi-Fi network, potentially compromising data privacy",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0079",
+        "Scenario Name": "Inventory_Management_Drone_via_Default/Weak_Credentials",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Default/Weak Credentials",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Control",
+            "Data Access",
+            "System Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an AGV Fleet Control System using a Private LTE/5G Network. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Software/Firmware via Default/Weak Credentials.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's control system via default or weak credentials, allowing malicious actors to manipulate flight paths and disrupt warehouse operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Exposure of sensitive inventory data and drone telemetry information due to insecure data transmission protocols, potentially compromising business confidentiality and privacy",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0594",
+        "Scenario Name": "Inventory_Management_Drone_via_RF_Jamming",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "RF Jamming",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Loss of Control",
+            "Communication Blackout",
+            "Mission Failure"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Wired Ethernet (via docking station). This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Communication Link via RF Jamming.",
+        "Expected Threats": [
+            {
+                "Threat": "RF Jamming disrupting communication between the drone and MES server",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to diagnostic logs transferred between the drone and MES server",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0536",
+        "Scenario Name": "Inventory_Management_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a Wired Ethernet (via docking station). This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Unencrypted communication link via LTE/5G allowing for interception and tampering of diagnostic logs",
+                "RED Article": "(e)"
+            },
+            {
+                "Threat": "Compromise of the drone or ICS PLC via the wired Ethernet connection, potentially allowing for unauthorized access and control of the industrial control system",
+                "RED Article": "(d)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0752",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unsecured_USB_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unsecured USB Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malware Injection",
+            "Data Theft",
+            "Firmware Tampering"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Physical Access Point via Unsecured USB Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the MES Server via the unsecured USB port on the Physical Access Point, potentially allowing an attacker to intercept or manipulate diagnostic logs",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized data exfiltration of sensitive diagnostic logs or manufacturing data, compromising the privacy and confidentiality of the warehouse operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0514",
+        "Scenario Name": "Inventory_Management_Drone_via_Unsecured_USB_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unsecured USB Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malware Injection",
+            "Data Theft",
+            "Firmware Tampering"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Physical Access Point via Unsecured USB Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the Industrial Control System (ICS) PLC via the unsecured USB port on the Physical Access Point, potentially allowing an attacker to inject malware or exfiltrate sensitive data",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception or eavesdropping of diagnostic logs transferred between the Inventory Management Drone and the ICS PLC over WPA2-Enterprise Wi-Fi, compromising data privacy and potentially revealing sensitive information about the warehouse operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0798",
+        "Scenario Name": "Inventory_Management_Drone_via_Cloud_Platform_Vulnerability",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Sensor readings (temperature, pressure)",
+        "Cybersecurity Origin/Attack Vector": "Cloud Platform Vulnerability",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Fleet-wide Control Compromise",
+            "Mass Data Breach",
+            "Supply Chain Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a WPA2-Enterprise Wi-Fi. This involves Sensor readings (temperature, pressure). A potential cybersecurity concern arises from the Backend System Interaction via Cloud Platform Vulnerability.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's sensor readings through exploitation of WPA2-Enterprise Wi-Fi vulnerabilities",
+                "RED Article": "(e)"
+            },
+            {
+                "Threat": "Cloud platform vulnerability allowing malicious actors to manipulate the Manufacturing Execution System (MES) server, disrupting inventory management and potentially causing financial loss",
+                "RED Article": "(f)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0867",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Insecure_API_to_WMS/MES",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Automated Storage and Retrieval System (AS/RS)",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Assembly instructions download",
+        "Cybersecurity Origin/Attack Vector": "Insecure API to WMS/MES",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Inventory Data Manipulation",
+            "Production Schedule Alteration",
+            "Unauthorized Order Creation"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Automated Storage and Retrieval System (AS/RS) using a Private LTE/5G Network. This involves Assembly instructions download. A potential cybersecurity concern arises from the Backend System Interaction via Insecure API to WMS/MES.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone and AS/RS system compromise through insecure API",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to assembly instructions and production data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0166",
+        "Scenario Name": "Inventory_Management_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Wi-Fi Access Point using a Bluetooth LE. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the Industrial Wi-Fi Access Point via the Exposed Diagnostic Port, allowing an attacker to intercept and manipulate flight path updates and control signals",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized data exfiltration of sensitive inventory information transmitted by the drone over Bluetooth LE, compromising data privacy",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0627",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Tamperable_Onboard_Storage",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Tamperable Onboard Storage",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Manipulation",
+            "Log Erasure",
+            "Data Exfiltration"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a WPA2-Enterprise Wi-Fi. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Physical Access Point via Tamperable Onboard Storage.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone's onboard storage, potentially allowing an attacker to extract or modify sensitive diagnostic logs and disrupt the AGV Fleet Control System",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of diagnostic logs transmitted over WPA2-Enterprise Wi-Fi, compromising the confidentiality and integrity of the data, and potentially leading to unauthorized disclosure of sensitive information",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0397",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_GNSS_Spoofing",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "GNSS Spoofing",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Misdirection/Collision",
+            "Mission Disruption",
+            "Data Corruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Control System (ICS) PLC using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Communication Link via GNSS Spoofing.",
+        "Expected Threats": [
+            {
+                "Threat": "GNSS Spoofing of the drone's navigation system, potentially disrupting its ability to deliver parts accurately and interfering with the overall operation of the warehouse",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthenticated or malicious firmware updates being installed on the drone or ICS PLC, allowing attackers to gain control over the system or steal sensitive data",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0295",
+        "Scenario Name": "Inventory_Management_Drone_via_Unauthorized_Wi-Fi_Access",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Unauthorized Wi-Fi Access",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Exfiltration",
+            "Command Injection",
+            "Denial of Service"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Industrial Control System (ICS) PLC using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Network Interface via Unauthorized Wi-Fi Access.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the Private LTE/5G Network via Wi-Fi, potentially allowing hackers to intercept or manipulate drone communications and ICS PLC interactions",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Compromised automated firmware updates, which could lead to the installation of malicious software, resulting in data breaches or disruptions to inventory management and ICS operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0668",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unsecured_USB_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "AGV Fleet Control System",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Unsecured USB Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malware Injection",
+            "Data Theft",
+            "Firmware Tampering"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an AGV Fleet Control System using a Bluetooth LE. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Physical Access Point via Unsecured USB Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the AGV Fleet Control System via the unsecured USB port, allowing an attacker to inject malware or exfiltrate sensitive data",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of diagnostic logs transferred over Bluetooth LE, potentially exposing sensitive information about the drone, AGV fleet, or warehouse operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0614",
+        "Scenario Name": "Inventory_Management_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Bluetooth LE",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Bluetooth LE. This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the drone or MES server through the exposed diagnostic port, allowing attackers to exploit vulnerabilities and gain control over the system or steal sensitive data",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception of diagnostic logs transferred over Bluetooth LE, potentially exposing confidential information about the warehouse's inventory and manufacturing operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0852",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Exposed_Diagnostic_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Automated Storage and Retrieval System (AS/RS)",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Assembly instructions download",
+        "Cybersecurity Origin/Attack Vector": "Exposed Diagnostic Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Configuration Change",
+            "Remote Control Takeover"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Automated Storage and Retrieval System (AS/RS) using a WPA2-Enterprise Wi-Fi. This involves Assembly instructions download. A potential cybersecurity concern arises from the Physical Access Point via Exposed Diagnostic Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the Wi-Fi network through the exposed diagnostic port, allowing an attacker to intercept or modify assembly instructions and disrupt the AS/RS and drone operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data breach of sensitive assembly instructions and potential drone navigation data, compromising intellectual property and privacy",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0326",
+        "Scenario Name": "Inventory_Management_Drone_via_Unencrypted_LTE/5G_Link",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Unencrypted LTE/5G Link",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Interception",
+            "Location Tracking",
+            "Command Interception"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Wired Ethernet (via docking station). This involves Automated firmware updates. A potential cybersecurity concern arises from the Communication Link via Unencrypted LTE/5G Link.",
+        "Expected Threats": [
+            {
+                "Threat": "Unencrypted Communication Link",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data Breach via Unsecured Firmware Updates",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0808",
+        "Scenario Name": "Inventory_Management_Drone_via_Unsecured_USB_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Sensor readings (temperature, pressure)",
+        "Cybersecurity Origin/Attack Vector": "Unsecured USB Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malware Injection",
+            "Data Theft",
+            "Firmware Tampering"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Sensor readings (temperature, pressure). A potential cybersecurity concern arises from the Physical Access Point via Unsecured USB Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the MES Server via the unsecured USB port on the Physical Access Point, potentially allowing an attacker to inject malware or exfiltrate sensitive data",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Interception or manipulation of sensor readings (temperature, pressure) transmitted by the Inventory Management Drone, which could compromise the integrity of the inventory management process or leak sensitive information",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0403",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Tamperable_Onboard_Storage",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Tamperable Onboard Storage",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Data Manipulation",
+            "Log Erasure",
+            "Data Exfiltration"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Control System (ICS) PLC using a WPA2-Enterprise Wi-Fi. This involves Automated firmware updates. A potential cybersecurity concern arises from the Physical Access Point via Tamperable Onboard Storage.",
+        "Expected Threats": [
+            {
+                "Threat": "Drone's WPA2-Enterprise Wi-Fi vulnerability to KRACK attacks, allowing unauthorized access to the Industrial Control System (ICS) PLC",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Tampering with the drone's onboard storage to intercept or manipulate firmware updates, potentially leading to unauthorized access to sensitive data or disruption of the ICS",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0332",
+        "Scenario Name": "Inventory_Management_Drone_via_Unsecured_USB_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Unsecured USB Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malware Injection",
+            "Data Theft",
+            "Firmware Tampering"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Wired Ethernet (via docking station). This involves Automated firmware updates. A potential cybersecurity concern arises from the Physical Access Point via Unsecured USB Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthenticated access to the drone or MES server via the unsecured USB port, allowing an attacker to install malware or exfiltrate sensitive data",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized firmware updates or manipulation of the drone's software, potentially leading to data breaches or disruption of inventory management operations",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0343",
+        "Scenario Name": "Inventory_Management_Drone_via_Vulnerable_Firmware_Update_Mechanism",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Inventory Management Drone",
+        "Interacting OT Component": "Manufacturing Execution System (MES) Server",
+        "Communication Protocol": "Private LTE/5G Network",
+        "Data Flow/Function": "Automated firmware updates",
+        "Cybersecurity Origin/Attack Vector": "Vulnerable Firmware Update Mechanism",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malicious Firmware Injection",
+            "Backdoor Installation",
+            "Operational Disruption"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Inventory Management Drone interacts with an Manufacturing Execution System (MES) Server using a Private LTE/5G Network. This involves Automated firmware updates. A potential cybersecurity concern arises from the Software/Firmware via Vulnerable Firmware Update Mechanism.",
+        "Expected Threats": [
+            {
+                "Threat": "Vulnerable Firmware Update Mechanism allowing unauthorized access to the drone or MES server",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Data breach or exfiltration of sensitive inventory information due to insecure firmware updates",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0709",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Default/Weak_Credentials",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Control System (ICS) PLC",
+        "Communication Protocol": "Wired Ethernet (via docking station)",
+        "Data Flow/Function": "Diagnostic logs transfer",
+        "Cybersecurity Origin/Attack Vector": "Default/Weak Credentials",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Unauthorized Control",
+            "Data Access",
+            "System Configuration Change"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Control System (ICS) PLC using a Wired Ethernet (via docking station). This involves Diagnostic logs transfer. A potential cybersecurity concern arises from the Software/Firmware via Default/Weak Credentials.",
+        "Expected Threats": [
+            {
+                "Threat": "Unauthorized access to the Industrial Control System (ICS) PLC via the drone's wired Ethernet connection, potentially allowing malicious actors to manipulate the PLC's settings or disrupt operations",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Exposure of sensitive diagnostic logs and potential drone operation data due to default or weak credentials in the drone's software/firmware, compromising data privacy and integrity",
+                "RED Article": "(e)"
+            }
+        ]
+    },
+    {
+        "Scenario ID": "CS-OT-UAV-0234",
+        "Scenario Name": "Automated_Parts_Delivery_Drone_via_Unsecured_USB_Port",
+        "Environment Context": "Indoor Warehouse",
+        "UAV Role": "Automated Parts Delivery Drone",
+        "Interacting OT Component": "Industrial Wi-Fi Access Point",
+        "Communication Protocol": "WPA2-Enterprise Wi-Fi",
+        "Data Flow/Function": "Flight path updates and control signals",
+        "Cybersecurity Origin/Attack Vector": "Unsecured USB Port",
+        "Potential Cybersecurity Consequences (from origin)": [
+            "Malware Injection",
+            "Data Theft",
+            "Firmware Tampering"
+        ],
+        "Scenario Description": "In an Indoor Warehouse, an Automated Parts Delivery Drone interacts with an Industrial Wi-Fi Access Point using a WPA2-Enterprise Wi-Fi. This involves Flight path updates and control signals. A potential cybersecurity concern arises from the Physical Access Point via Unsecured USB Port.",
+        "Expected Threats": [
+            {
+                "Threat": "Malicious code injection via the unsecured USB port on the Industrial Wi-Fi Access Point, potentially compromising the drone's control signals and flight path updates",
+                "RED Article": "(d)"
+            },
+            {
+                "Threat": "Unauthorized access to sensitive flight path data and control signals transmitted over the WPA2-Enterprise Wi-Fi network, potentially leading to data breaches or eavesdropping",
+                "RED Article": "(e)"
+            }
+        ]
+    }
+]

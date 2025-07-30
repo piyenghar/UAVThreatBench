@@ -1,0 +1,864 @@
+--- Running evaluations for multiple model output files ---
+
+Processing: gpt-3.5-turbo-16k_threats.json
+
+Processing: gpt-4.1-mini_threats.json
+
+Processing: gpt-4.1-nano_threats.json
+
+Processing: gpt-4.1_threats.json
+
+Processing: gpt-4o_threats.json
+
+Processing: llama-3.1-sauerkrautlm-70b-instruct_threats.json
+
+Processing: llama-3.3-70b-instruct_threats.json
+
+--- Comparative Evaluation Summary (token_set_ratio, Threshold=70) ---
+Model File                                          Perfect (%)    Partial (%)    No Match (%)    Total Match (%)    
+---------------------------------------------------------------------------------------------------------------------
+gpt-3.5-turbo-16k_threats.json                      35.00      %44.00      %21.00       %79.00          %
+gpt-4.1-mini_threats.json                           23.00      %56.00      %21.00       %79.00          %
+gpt-4.1-nano_threats.json                           13.00      %31.00      %56.00       %44.00          %
+gpt-4.1_threats.json                                25.00      %51.00      %24.00       %76.00          %
+gpt-4o_threats.json                                 46.00      %41.00      %13.00       %87.00          %
+llama-3.1-sauerkrautlm-70b-instruct_threats.json    15.00      %44.00      %41.00       %59.00          %
+llama-3.3-70b-instruct_threats.json                 19.00      %57.00      %24.00       %76.00          %
+
+--- Scenario IDs with Inconsistent Classification Across Models ---
+  - CS-OT-UAV-0020:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0026:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0027:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0054:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0057:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0061:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0069:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0070:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0076:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0079:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0086:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0088:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0105:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0112:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0114:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0117:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0137:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0161:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0166:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0219:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0229:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0234:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0236:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0251:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0283:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0295:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0306:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0313:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0316:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0320:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0321:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0326:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0332:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0339:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0342:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0343:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0362:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0369:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0379:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0382:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0394:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0403:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0415:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0427:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0433:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0437:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0439:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0444:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0463:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0476:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0514:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0519:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0524:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0536:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0545:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0552:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0559:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0561:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0564:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0573:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0575:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0593:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0594:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0614:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0617:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0620:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0622:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0625:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0627:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0637:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0644:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0668:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0672:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0709:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0737:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0749:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0750:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0752:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0759:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0769:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0772:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0774:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0778:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0779:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Perfect
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0798:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0803:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0808:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0818:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0828:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0838:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Perfect
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0844:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0852:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0858:
+    gpt-3.5-turbo-16k_threats.json: Perfect
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+  - CS-OT-UAV-0859:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Perfect
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: Partial
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0867:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: Partial
+    gpt-4.1_threats.json: Partial
+    gpt-4o_threats.json: No Match
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: No Match
+  - CS-OT-UAV-0914:
+    gpt-3.5-turbo-16k_threats.json: Partial
+    gpt-4.1-mini_threats.json: Partial
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: No Match
+    gpt-4o_threats.json: Perfect
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Perfect
+  - CS-OT-UAV-0920:
+    gpt-3.5-turbo-16k_threats.json: No Match
+    gpt-4.1-mini_threats.json: No Match
+    gpt-4.1-nano_threats.json: No Match
+    gpt-4.1_threats.json: Perfect
+    gpt-4o_threats.json: Partial
+    llama-3.1-sauerkrautlm-70b-instruct_threats.json: No Match
+    llama-3.3-70b-instruct_threats.json: Partial
+
+Total Inconsistent Scenario IDs: 97
+
+--- Detailed Scenario IDs by Classification per Model File ---
+
+Model File: gpt-3.5-turbo-16k_threats.json (Total evaluated: 100)
+  Perfect Match IDs (35):
+    CS-OT-UAV-0020, CS-OT-UAV-0057, CS-OT-UAV-0076, CS-OT-UAV-0079, CS-OT-UAV-0086, CS-OT-UAV-0112, CS-OT-UAV-0137, CS-OT-UAV-0161, CS-OT-UAV-0166, CS-OT-UAV-0219, CS-OT-UAV-0229, CS-OT-UAV-0236, CS-OT-UAV-0306, CS-OT-UAV-0320, CS-OT-UAV-0342, CS-OT-UAV-0343, CS-OT-UAV-0362, CS-OT-UAV-0394, CS-OT-UAV-0403, CS-OT-UAV-0444, CS-OT-UAV-0514, CS-OT-UAV-0524, CS-OT-UAV-0536, CS-OT-UAV-0559, CS-OT-UAV-0625, CS-OT-UAV-0627, CS-OT-UAV-0637, CS-OT-UAV-0668, CS-OT-UAV-0672, CS-OT-UAV-0709, CS-OT-UAV-0749, CS-OT-UAV-0779, CS-OT-UAV-0808, CS-OT-UAV-0818, CS-OT-UAV-0858
+  Partial Match IDs (44):
+    CS-OT-UAV-0026, CS-OT-UAV-0054, CS-OT-UAV-0061, CS-OT-UAV-0069, CS-OT-UAV-0070, CS-OT-UAV-0088, CS-OT-UAV-0105, CS-OT-UAV-0114, CS-OT-UAV-0117, CS-OT-UAV-0234, CS-OT-UAV-0295, CS-OT-UAV-0316, CS-OT-UAV-0321, CS-OT-UAV-0326, CS-OT-UAV-0350, CS-OT-UAV-0352, CS-OT-UAV-0369, CS-OT-UAV-0379, CS-OT-UAV-0415, CS-OT-UAV-0427, CS-OT-UAV-0433, CS-OT-UAV-0439, CS-OT-UAV-0476, CS-OT-UAV-0519, CS-OT-UAV-0552, CS-OT-UAV-0561, CS-OT-UAV-0564, CS-OT-UAV-0573, CS-OT-UAV-0575, CS-OT-UAV-0614, CS-OT-UAV-0617, CS-OT-UAV-0622, CS-OT-UAV-0644, CS-OT-UAV-0759, CS-OT-UAV-0769, CS-OT-UAV-0772, CS-OT-UAV-0803, CS-OT-UAV-0828, CS-OT-UAV-0838, CS-OT-UAV-0844, CS-OT-UAV-0852, CS-OT-UAV-0859, CS-OT-UAV-0867, CS-OT-UAV-0914
+  No Match IDs (21):
+    CS-OT-UAV-0027, CS-OT-UAV-0251, CS-OT-UAV-0283, CS-OT-UAV-0313, CS-OT-UAV-0332, CS-OT-UAV-0339, CS-OT-UAV-0382, CS-OT-UAV-0397, CS-OT-UAV-0437, CS-OT-UAV-0463, CS-OT-UAV-0545, CS-OT-UAV-0593, CS-OT-UAV-0594, CS-OT-UAV-0620, CS-OT-UAV-0737, CS-OT-UAV-0750, CS-OT-UAV-0752, CS-OT-UAV-0774, CS-OT-UAV-0778, CS-OT-UAV-0798, CS-OT-UAV-0920
+
+Model File: gpt-4.1-mini_threats.json (Total evaluated: 100)
+  Perfect Match IDs (23):
+    CS-OT-UAV-0070, CS-OT-UAV-0076, CS-OT-UAV-0086, CS-OT-UAV-0112, CS-OT-UAV-0114, CS-OT-UAV-0236, CS-OT-UAV-0321, CS-OT-UAV-0476, CS-OT-UAV-0536, CS-OT-UAV-0559, CS-OT-UAV-0575, CS-OT-UAV-0622, CS-OT-UAV-0625, CS-OT-UAV-0637, CS-OT-UAV-0644, CS-OT-UAV-0668, CS-OT-UAV-0749, CS-OT-UAV-0778, CS-OT-UAV-0803, CS-OT-UAV-0828, CS-OT-UAV-0844, CS-OT-UAV-0852, CS-OT-UAV-0859
+  Partial Match IDs (56):
+    CS-OT-UAV-0020, CS-OT-UAV-0027, CS-OT-UAV-0054, CS-OT-UAV-0057, CS-OT-UAV-0061, CS-OT-UAV-0069, CS-OT-UAV-0079, CS-OT-UAV-0117, CS-OT-UAV-0137, CS-OT-UAV-0161, CS-OT-UAV-0166, CS-OT-UAV-0219, CS-OT-UAV-0229, CS-OT-UAV-0234, CS-OT-UAV-0251, CS-OT-UAV-0283, CS-OT-UAV-0306, CS-OT-UAV-0313, CS-OT-UAV-0320, CS-OT-UAV-0326, CS-OT-UAV-0342, CS-OT-UAV-0350, CS-OT-UAV-0352, CS-OT-UAV-0362, CS-OT-UAV-0382, CS-OT-UAV-0394, CS-OT-UAV-0427, CS-OT-UAV-0433, CS-OT-UAV-0437, CS-OT-UAV-0444, CS-OT-UAV-0463, CS-OT-UAV-0519, CS-OT-UAV-0524, CS-OT-UAV-0552, CS-OT-UAV-0564, CS-OT-UAV-0593, CS-OT-UAV-0594, CS-OT-UAV-0614, CS-OT-UAV-0617, CS-OT-UAV-0620, CS-OT-UAV-0627, CS-OT-UAV-0672, CS-OT-UAV-0709, CS-OT-UAV-0737, CS-OT-UAV-0750, CS-OT-UAV-0752, CS-OT-UAV-0759, CS-OT-UAV-0774, CS-OT-UAV-0779, CS-OT-UAV-0798, CS-OT-UAV-0808, CS-OT-UAV-0818, CS-OT-UAV-0838, CS-OT-UAV-0858, CS-OT-UAV-0867, CS-OT-UAV-0914
+  No Match IDs (21):
+    CS-OT-UAV-0026, CS-OT-UAV-0088, CS-OT-UAV-0105, CS-OT-UAV-0295, CS-OT-UAV-0316, CS-OT-UAV-0332, CS-OT-UAV-0339, CS-OT-UAV-0343, CS-OT-UAV-0369, CS-OT-UAV-0379, CS-OT-UAV-0397, CS-OT-UAV-0403, CS-OT-UAV-0415, CS-OT-UAV-0439, CS-OT-UAV-0514, CS-OT-UAV-0545, CS-OT-UAV-0561, CS-OT-UAV-0573, CS-OT-UAV-0769, CS-OT-UAV-0772, CS-OT-UAV-0920
+
+Model File: gpt-4.1-nano_threats.json (Total evaluated: 100)
+  Perfect Match IDs (13):
+    CS-OT-UAV-0061, CS-OT-UAV-0112, CS-OT-UAV-0114, CS-OT-UAV-0137, CS-OT-UAV-0234, CS-OT-UAV-0316, CS-OT-UAV-0342, CS-OT-UAV-0514, CS-OT-UAV-0594, CS-OT-UAV-0622, CS-OT-UAV-0625, CS-OT-UAV-0749, CS-OT-UAV-0838
+  Partial Match IDs (31):
+    CS-OT-UAV-0020, CS-OT-UAV-0054, CS-OT-UAV-0070, CS-OT-UAV-0076, CS-OT-UAV-0086, CS-OT-UAV-0105, CS-OT-UAV-0117, CS-OT-UAV-0161, CS-OT-UAV-0166, CS-OT-UAV-0229, CS-OT-UAV-0236, CS-OT-UAV-0251, CS-OT-UAV-0295, CS-OT-UAV-0350, CS-OT-UAV-0352, CS-OT-UAV-0362, CS-OT-UAV-0379, CS-OT-UAV-0394, CS-OT-UAV-0439, CS-OT-UAV-0552, CS-OT-UAV-0559, CS-OT-UAV-0644, CS-OT-UAV-0668, CS-OT-UAV-0709, CS-OT-UAV-0737, CS-OT-UAV-0772, CS-OT-UAV-0779, CS-OT-UAV-0803, CS-OT-UAV-0828, CS-OT-UAV-0859, CS-OT-UAV-0867
+  No Match IDs (56):
+    CS-OT-UAV-0026, CS-OT-UAV-0027, CS-OT-UAV-0057, CS-OT-UAV-0069, CS-OT-UAV-0079, CS-OT-UAV-0088, CS-OT-UAV-0219, CS-OT-UAV-0283, CS-OT-UAV-0306, CS-OT-UAV-0313, CS-OT-UAV-0320, CS-OT-UAV-0321, CS-OT-UAV-0326, CS-OT-UAV-0332, CS-OT-UAV-0339, CS-OT-UAV-0343, CS-OT-UAV-0369, CS-OT-UAV-0382, CS-OT-UAV-0397, CS-OT-UAV-0403, CS-OT-UAV-0415, CS-OT-UAV-0427, CS-OT-UAV-0433, CS-OT-UAV-0437, CS-OT-UAV-0444, CS-OT-UAV-0463, CS-OT-UAV-0476, CS-OT-UAV-0519, CS-OT-UAV-0524, CS-OT-UAV-0536, CS-OT-UAV-0545, CS-OT-UAV-0561, CS-OT-UAV-0564, CS-OT-UAV-0573, CS-OT-UAV-0575, CS-OT-UAV-0593, CS-OT-UAV-0614, CS-OT-UAV-0617, CS-OT-UAV-0620, CS-OT-UAV-0627, CS-OT-UAV-0637, CS-OT-UAV-0672, CS-OT-UAV-0750, CS-OT-UAV-0752, CS-OT-UAV-0759, CS-OT-UAV-0769, CS-OT-UAV-0774, CS-OT-UAV-0778, CS-OT-UAV-0798, CS-OT-UAV-0808, CS-OT-UAV-0818, CS-OT-UAV-0844, CS-OT-UAV-0852, CS-OT-UAV-0858, CS-OT-UAV-0914, CS-OT-UAV-0920
+
+Model File: gpt-4.1_threats.json (Total evaluated: 100)
+  Perfect Match IDs (25):
+    CS-OT-UAV-0020, CS-OT-UAV-0026, CS-OT-UAV-0027, CS-OT-UAV-0070, CS-OT-UAV-0079, CS-OT-UAV-0166, CS-OT-UAV-0219, CS-OT-UAV-0229, CS-OT-UAV-0306, CS-OT-UAV-0316, CS-OT-UAV-0326, CS-OT-UAV-0342, CS-OT-UAV-0437, CS-OT-UAV-0514, CS-OT-UAV-0594, CS-OT-UAV-0625, CS-OT-UAV-0672, CS-OT-UAV-0750, CS-OT-UAV-0769, CS-OT-UAV-0772, CS-OT-UAV-0778, CS-OT-UAV-0779, CS-OT-UAV-0844, CS-OT-UAV-0852, CS-OT-UAV-0920
+  Partial Match IDs (51):
+    CS-OT-UAV-0054, CS-OT-UAV-0069, CS-OT-UAV-0076, CS-OT-UAV-0086, CS-OT-UAV-0105, CS-OT-UAV-0112, CS-OT-UAV-0161, CS-OT-UAV-0234, CS-OT-UAV-0236, CS-OT-UAV-0283, CS-OT-UAV-0295, CS-OT-UAV-0313, CS-OT-UAV-0320, CS-OT-UAV-0321, CS-OT-UAV-0343, CS-OT-UAV-0350, CS-OT-UAV-0352, CS-OT-UAV-0362, CS-OT-UAV-0379, CS-OT-UAV-0382, CS-OT-UAV-0394, CS-OT-UAV-0415, CS-OT-UAV-0427, CS-OT-UAV-0433, CS-OT-UAV-0444, CS-OT-UAV-0463, CS-OT-UAV-0476, CS-OT-UAV-0519, CS-OT-UAV-0524, CS-OT-UAV-0536, CS-OT-UAV-0545, CS-OT-UAV-0552, CS-OT-UAV-0559, CS-OT-UAV-0561, CS-OT-UAV-0575, CS-OT-UAV-0614, CS-OT-UAV-0617, CS-OT-UAV-0622, CS-OT-UAV-0627, CS-OT-UAV-0637, CS-OT-UAV-0644, CS-OT-UAV-0668, CS-OT-UAV-0709, CS-OT-UAV-0737, CS-OT-UAV-0749, CS-OT-UAV-0774, CS-OT-UAV-0798, CS-OT-UAV-0818, CS-OT-UAV-0828, CS-OT-UAV-0859, CS-OT-UAV-0867
+  No Match IDs (24):
+    CS-OT-UAV-0057, CS-OT-UAV-0061, CS-OT-UAV-0088, CS-OT-UAV-0114, CS-OT-UAV-0117, CS-OT-UAV-0137, CS-OT-UAV-0251, CS-OT-UAV-0332, CS-OT-UAV-0339, CS-OT-UAV-0369, CS-OT-UAV-0397, CS-OT-UAV-0403, CS-OT-UAV-0439, CS-OT-UAV-0564, CS-OT-UAV-0573, CS-OT-UAV-0593, CS-OT-UAV-0620, CS-OT-UAV-0752, CS-OT-UAV-0759, CS-OT-UAV-0803, CS-OT-UAV-0808, CS-OT-UAV-0838, CS-OT-UAV-0858, CS-OT-UAV-0914
+
+Model File: gpt-4o_threats.json (Total evaluated: 100)
+  Perfect Match IDs (46):
+    CS-OT-UAV-0020, CS-OT-UAV-0026, CS-OT-UAV-0054, CS-OT-UAV-0076, CS-OT-UAV-0079, CS-OT-UAV-0112, CS-OT-UAV-0114, CS-OT-UAV-0219, CS-OT-UAV-0234, CS-OT-UAV-0251, CS-OT-UAV-0306, CS-OT-UAV-0320, CS-OT-UAV-0343, CS-OT-UAV-0362, CS-OT-UAV-0379, CS-OT-UAV-0439, CS-OT-UAV-0444, CS-OT-UAV-0463, CS-OT-UAV-0514, CS-OT-UAV-0524, CS-OT-UAV-0536, CS-OT-UAV-0552, CS-OT-UAV-0561, CS-OT-UAV-0575, CS-OT-UAV-0622, CS-OT-UAV-0625, CS-OT-UAV-0627, CS-OT-UAV-0637, CS-OT-UAV-0644, CS-OT-UAV-0668, CS-OT-UAV-0672, CS-OT-UAV-0709, CS-OT-UAV-0737, CS-OT-UAV-0749, CS-OT-UAV-0750, CS-OT-UAV-0752, CS-OT-UAV-0772, CS-OT-UAV-0774, CS-OT-UAV-0778, CS-OT-UAV-0779, CS-OT-UAV-0803, CS-OT-UAV-0808, CS-OT-UAV-0818, CS-OT-UAV-0852, CS-OT-UAV-0859, CS-OT-UAV-0914
+  Partial Match IDs (41):
+    CS-OT-UAV-0027, CS-OT-UAV-0057, CS-OT-UAV-0061, CS-OT-UAV-0070, CS-OT-UAV-0086, CS-OT-UAV-0088, CS-OT-UAV-0105, CS-OT-UAV-0117, CS-OT-UAV-0137, CS-OT-UAV-0161, CS-OT-UAV-0166, CS-OT-UAV-0229, CS-OT-UAV-0236, CS-OT-UAV-0283, CS-OT-UAV-0295, CS-OT-UAV-0313, CS-OT-UAV-0316, CS-OT-UAV-0326, CS-OT-UAV-0342, CS-OT-UAV-0350, CS-OT-UAV-0352, CS-OT-UAV-0369, CS-OT-UAV-0382, CS-OT-UAV-0394, CS-OT-UAV-0403, CS-OT-UAV-0415, CS-OT-UAV-0427, CS-OT-UAV-0433, CS-OT-UAV-0437, CS-OT-UAV-0519, CS-OT-UAV-0573, CS-OT-UAV-0593, CS-OT-UAV-0594, CS-OT-UAV-0614, CS-OT-UAV-0620, CS-OT-UAV-0769, CS-OT-UAV-0798, CS-OT-UAV-0828, CS-OT-UAV-0838, CS-OT-UAV-0858, CS-OT-UAV-0920
+  No Match IDs (13):
+    CS-OT-UAV-0069, CS-OT-UAV-0321, CS-OT-UAV-0332, CS-OT-UAV-0339, CS-OT-UAV-0397, CS-OT-UAV-0476, CS-OT-UAV-0545, CS-OT-UAV-0559, CS-OT-UAV-0564, CS-OT-UAV-0617, CS-OT-UAV-0759, CS-OT-UAV-0844, CS-OT-UAV-0867
+
+Model File: llama-3.1-sauerkrautlm-70b-instruct_threats.json (Total evaluated: 100)
+  Perfect Match IDs (15):
+    CS-OT-UAV-0061, CS-OT-UAV-0137, CS-OT-UAV-0236, CS-OT-UAV-0295, CS-OT-UAV-0313, CS-OT-UAV-0343, CS-OT-UAV-0382, CS-OT-UAV-0427, CS-OT-UAV-0593, CS-OT-UAV-0620, CS-OT-UAV-0622, CS-OT-UAV-0672, CS-OT-UAV-0752, CS-OT-UAV-0759, CS-OT-UAV-0779
+  Partial Match IDs (44):
+    CS-OT-UAV-0020, CS-OT-UAV-0026, CS-OT-UAV-0027, CS-OT-UAV-0054, CS-OT-UAV-0070, CS-OT-UAV-0086, CS-OT-UAV-0161, CS-OT-UAV-0166, CS-OT-UAV-0229, CS-OT-UAV-0234, CS-OT-UAV-0251, CS-OT-UAV-0283, CS-OT-UAV-0316, CS-OT-UAV-0320, CS-OT-UAV-0321, CS-OT-UAV-0326, CS-OT-UAV-0332, CS-OT-UAV-0342, CS-OT-UAV-0350, CS-OT-UAV-0352, CS-OT-UAV-0379, CS-OT-UAV-0415, CS-OT-UAV-0437, CS-OT-UAV-0463, CS-OT-UAV-0476, CS-OT-UAV-0514, CS-OT-UAV-0519, CS-OT-UAV-0524, CS-OT-UAV-0536, CS-OT-UAV-0559, CS-OT-UAV-0561, CS-OT-UAV-0573, CS-OT-UAV-0614, CS-OT-UAV-0627, CS-OT-UAV-0637, CS-OT-UAV-0750, CS-OT-UAV-0772, CS-OT-UAV-0774, CS-OT-UAV-0778, CS-OT-UAV-0803, CS-OT-UAV-0818, CS-OT-UAV-0838, CS-OT-UAV-0852, CS-OT-UAV-0859
+  No Match IDs (41):
+    CS-OT-UAV-0057, CS-OT-UAV-0069, CS-OT-UAV-0076, CS-OT-UAV-0079, CS-OT-UAV-0088, CS-OT-UAV-0105, CS-OT-UAV-0112, CS-OT-UAV-0114, CS-OT-UAV-0117, CS-OT-UAV-0219, CS-OT-UAV-0306, CS-OT-UAV-0339, CS-OT-UAV-0362, CS-OT-UAV-0369, CS-OT-UAV-0394, CS-OT-UAV-0397, CS-OT-UAV-0403, CS-OT-UAV-0433, CS-OT-UAV-0439, CS-OT-UAV-0444, CS-OT-UAV-0545, CS-OT-UAV-0552, CS-OT-UAV-0564, CS-OT-UAV-0575, CS-OT-UAV-0594, CS-OT-UAV-0617, CS-OT-UAV-0625, CS-OT-UAV-0644, CS-OT-UAV-0668, CS-OT-UAV-0709, CS-OT-UAV-0737, CS-OT-UAV-0749, CS-OT-UAV-0769, CS-OT-UAV-0798, CS-OT-UAV-0808, CS-OT-UAV-0828, CS-OT-UAV-0844, CS-OT-UAV-0858, CS-OT-UAV-0867, CS-OT-UAV-0914, CS-OT-UAV-0920
+
+Model File: llama-3.3-70b-instruct_threats.json (Total evaluated: 100)
+  Perfect Match IDs (19):
+    CS-OT-UAV-0020, CS-OT-UAV-0076, CS-OT-UAV-0137, CS-OT-UAV-0306, CS-OT-UAV-0316, CS-OT-UAV-0382, CS-OT-UAV-0463, CS-OT-UAV-0524, CS-OT-UAV-0561, CS-OT-UAV-0622, CS-OT-UAV-0625, CS-OT-UAV-0672, CS-OT-UAV-0759, CS-OT-UAV-0772, CS-OT-UAV-0774, CS-OT-UAV-0818, CS-OT-UAV-0828, CS-OT-UAV-0844, CS-OT-UAV-0914
+  Partial Match IDs (57):
+    CS-OT-UAV-0026, CS-OT-UAV-0054, CS-OT-UAV-0057, CS-OT-UAV-0061, CS-OT-UAV-0079, CS-OT-UAV-0088, CS-OT-UAV-0114, CS-OT-UAV-0161, CS-OT-UAV-0166, CS-OT-UAV-0219, CS-OT-UAV-0229, CS-OT-UAV-0234, CS-OT-UAV-0236, CS-OT-UAV-0251, CS-OT-UAV-0283, CS-OT-UAV-0295, CS-OT-UAV-0320, CS-OT-UAV-0326, CS-OT-UAV-0332, CS-OT-UAV-0339, CS-OT-UAV-0342, CS-OT-UAV-0343, CS-OT-UAV-0350, CS-OT-UAV-0352, CS-OT-UAV-0362, CS-OT-UAV-0369, CS-OT-UAV-0379, CS-OT-UAV-0394, CS-OT-UAV-0403, CS-OT-UAV-0415, CS-OT-UAV-0444, CS-OT-UAV-0476, CS-OT-UAV-0514, CS-OT-UAV-0519, CS-OT-UAV-0545, CS-OT-UAV-0552, CS-OT-UAV-0559, CS-OT-UAV-0564, CS-OT-UAV-0575, CS-OT-UAV-0593, CS-OT-UAV-0614, CS-OT-UAV-0617, CS-OT-UAV-0620, CS-OT-UAV-0627, CS-OT-UAV-0637, CS-OT-UAV-0644, CS-OT-UAV-0709, CS-OT-UAV-0737, CS-OT-UAV-0749, CS-OT-UAV-0750, CS-OT-UAV-0769, CS-OT-UAV-0778, CS-OT-UAV-0798, CS-OT-UAV-0808, CS-OT-UAV-0852, CS-OT-UAV-0858, CS-OT-UAV-0920
+  No Match IDs (24):
+    CS-OT-UAV-0027, CS-OT-UAV-0069, CS-OT-UAV-0070, CS-OT-UAV-0086, CS-OT-UAV-0105, CS-OT-UAV-0112, CS-OT-UAV-0117, CS-OT-UAV-0313, CS-OT-UAV-0321, CS-OT-UAV-0397, CS-OT-UAV-0427, CS-OT-UAV-0433, CS-OT-UAV-0437, CS-OT-UAV-0439, CS-OT-UAV-0536, CS-OT-UAV-0573, CS-OT-UAV-0594, CS-OT-UAV-0668, CS-OT-UAV-0752, CS-OT-UAV-0779, CS-OT-UAV-0803, CS-OT-UAV-0838, CS-OT-UAV-0859, CS-OT-UAV-0867
