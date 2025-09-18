@@ -36,20 +36,22 @@ These outputs were then **automatically evaluated** by comparing them against th
 
 ## Citation
 
-If you use this benchmark in your work, please cite the corresponding paper (forthcoming, 2025).
+If you use this benchmark, please cite the corresponding paper:
 
-https://www.mdpi.com/2504-446X/9/9/657
+Iyenghar, Padma. *UAVThreatBench: A UAV Cybersecurity Risk Assessment Dataset and Empirical Benchmarking of LLMs for Threat Identification.* **Drones**, 9(9), 657, 2025.  
+[👉 Read the article on MDPI](https://www.mdpi.com/2504-446X/9/9/657)
 
+```bibtex
 @Article{drones9090657,
-AUTHOR = {Iyenghar, Padma},
-TITLE = {UAVThreatBench: A UAV Cybersecurity Risk Assessment Dataset and Empirical Benchmarking of LLMs for Threat Identification},
-JOURNAL = {Drones},
-VOLUME = {9},
-YEAR = {2025},
-NUMBER = {9},
-ARTICLE-NUMBER = {657},
-URL = {https://www.mdpi.com/2504-446X/9/9/657},
-ISSN = {2504-446X}
+  author        = {Iyenghar, Padma},
+  title         = {UAVThreatBench: A UAV Cybersecurity Risk Assessment Dataset and Empirical Benchmarking of LLMs for Threat Identification},
+  journal       = {Drones},
+  year          = {2025},
+  volume        = {9},
+  number        = {9},
+  article-number= {657},
+  issn          = {2504-446X},
+  url           = {https://www.mdpi.com/2504-446X/9/9/657}
 }
 
 ---
