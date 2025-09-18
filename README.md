@@ -38,6 +38,20 @@ These outputs were then **automatically evaluated** by comparing them against th
 
 If you use this benchmark in your work, please cite the corresponding paper (forthcoming, 2025).
 
+https://www.mdpi.com/2504-446X/9/9/657
+
+
+@Article{drones9090657,
+AUTHOR = {Iyenghar, Padma},
+TITLE = {UAVThreatBench: A UAV Cybersecurity Risk Assessment Dataset and Empirical Benchmarking of LLMs for Threat Identification},
+JOURNAL = {Drones},
+VOLUME = {9},
+YEAR = {2025},
+NUMBER = {9},
+ARTICLE-NUMBER = {657},
+URL = {https://www.mdpi.com/2504-446X/9/9/657},
+ISSN = {2504-446X}
+}
 ---
 
 For questions or contributions, please contact [Padma Iyenghar](mailto:piyengha@uos.de).
