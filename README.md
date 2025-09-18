@@ -40,7 +40,6 @@ If you use this benchmark in your work, please cite the corresponding paper (for
 
 https://www.mdpi.com/2504-446X/9/9/657
 
-
 @Article{drones9090657,
 AUTHOR = {Iyenghar, Padma},
 TITLE = {UAVThreatBench: A UAV Cybersecurity Risk Assessment Dataset and Empirical Benchmarking of LLMs for Threat Identification},
@@ -52,6 +51,7 @@ ARTICLE-NUMBER = {657},
 URL = {https://www.mdpi.com/2504-446X/9/9/657},
 ISSN = {2504-446X}
 }
+
 ---
 
 For questions or contributions, please contact [Padma Iyenghar](mailto:piyengha@uos.de).
